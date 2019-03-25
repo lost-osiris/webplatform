@@ -1,0 +1,5 @@
+{
+  "num_cores": 1,
+  "port": 27217,
+  "host": "mongodb"
+}

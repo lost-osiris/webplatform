@@ -1,0 +1,53 @@
+{
+   "num_cores": 1,
+   "app-root": {
+      "rel": true,
+      "path": "/"
+   },
+   "host": "localhost",
+   "wsgi-websockets": {
+      "path": "settings/websockets/wsgi.py",
+      "rel": true
+   },
+   "api": {
+      "path": "api/",
+      "rel": true
+   },
+   "app-views": {
+      "path": "api/application/",
+      "rel": true
+   },
+   "timeout": 600,
+   "base-dir": {
+      "path": "",
+      "rel": true
+   },
+   "tls-crt":  {
+      "path": "settings/httpd/tls/server.crt",
+      "rel": true
+   },
+   "tls-key":  {
+      "path": "settings/httpd/tls/server.key",
+      "rel": true
+   },
+   "tls-csr":  {
+      "path": "settings/httpd/tls/server.csr",
+      "rel": true
+   },
+   "tls-lock":  {
+      "path": "settings/httpd/tls/server.lock",
+      "verify":false,
+      "rel": true
+   },
+   "tls-country": "US",
+   "tls-state": "NC",
+   "tls-org": "Red Hat",
+   "tls-org-unit": "CEE",
+   "tls-FQDN": "localhost",
+   "tls-email": "mowens@redhat.com",
+   "webpack-port": 3000,
+   "websockets": "cee-tools-devel-websockets",
+   "port-https": 8000,
+   "port-http": 8001,
+   "process-group": "cee-tools-devel"
+}

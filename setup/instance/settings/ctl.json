@@ -1,0 +1,73 @@
+{
+   "services": ["httpd", "mongodb", "nodejs", "gulp", "websockets"],
+   "app-root": {
+      "rel": true,
+      "path": "/"
+   },
+   "pid": {
+      "rel": true,
+      "path": "controller/container/pids/ceetools-ctl.pid"
+   },
+   "pids-dir": {
+      "rel": true,
+      "path": "services/pids/"
+   },
+   "log": {
+      "rel": true,
+      "path":"logs/ceetools-ctl.log"
+   },
+   "scripts-path": {
+      "rel": true,
+      "path": "docker/controller/host/tasks/scripts/"
+   },
+   "install": "install.sh",
+   "setup-virtv": "setup_virtualenv.sh",
+   "setup-npm": "setup_npm.sh",
+   "setup-bower": "setup_bower.sh",
+   "tls-selfsigned": "tls_selfsigned.sh",
+   "tls-request": "tls_request.sh",
+   "setup": "setup_%s.sh",
+   "flush": "flush.sh",
+   "pip-global": [
+      "virtualenv"
+   ],
+   "pip-dependencies": [
+      "pytz", 
+      "jsonrpclib", 
+      "socketIO-client", 
+      "BeautifulSoup4", 
+      "requests", 
+      "pymongo", 
+      "django", 
+      "simplejson", 
+      "ldap3",
+      "pyyaml",
+      "pymysql",
+      "mysqlclient"
+   ],
+   "npm-global": [
+      "gulp",
+      "bower"
+   ],
+   "yum-host-dependencies": [
+      "docker"
+   ], 
+   "yum-dependencies": [
+      "python3-mod_wsgi",
+      "mod_ssl",
+      "python",
+      "httpd",
+      "curl",
+      "python3-devel",
+      "httpd-devel",
+      "httpd",
+      "libxml2",
+      "libxml2-devel",
+      "libxslt",
+      "libxslt-devel",
+      "xmlsec1-devel",
+      "xmlsec1-openssl-devel",
+      "libtool-ltdl-devel",
+      "mongodb-org"
+   ]
+} 

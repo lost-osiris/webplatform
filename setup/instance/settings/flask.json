@@ -1,0 +1,18 @@
+{
+   "num_cores": 2,
+   "debug": true,
+   "logs": {
+      "path": "setup/logs/devel/httpd/debug.log",
+      "rel": true
+   },
+   "saml-settings": {
+      "rel": true,
+      "path": "setup/instances/devel/settings/saml/"
+   },
+   "saml-certs": {
+      "rel": true,
+      "path": "setup/instances/devel/settings/saml/certs/"
+   },
+   "default-user": "mowens",
+   "monitor": true
+}

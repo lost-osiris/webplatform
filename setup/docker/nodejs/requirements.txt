@@ -1,0 +1,2 @@
+isodate==0.5.4
+simplejson==3.8.2
